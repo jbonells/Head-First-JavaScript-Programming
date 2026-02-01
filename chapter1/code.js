@@ -1,11 +1,14 @@
-let scoops = 5;
-while (scoops > 0) {
-	console.log("Another scoop!");
-	if (scoops < 3) {
-		console.log("Ice cream is running low!");
-	} else if (scoops >= 5) {
-		console.log("Eat faster, the ice cream is going to melt!");
-	}
-	scoops = scoops - 1;
+let word = "bottles";
+let count = 99;
+console.log(count + " " + word + " of rootbeer on the wall.");
+while (count > 0) {
+    console.log(count + " " + word + " of rootbeer on the wall.");
+    console.log(count + " " + word + " of rootbeer.");
+    console.log("Take one down, pass it around.");
+    count = count - 1;
+    if (count > 0) {
+        console.log(count + " " + word + " of rootbeer on the wall.");
+    } else {
+        console.log("No more " + word + " of rootbeer on the wall.");
+    }
 }
-console.log("Life without ice cream isn't the same");
